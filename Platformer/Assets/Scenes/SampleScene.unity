@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 63795664}
   - component: {fileID: 63795663}
+  - component: {fileID: 63795665}
   m_Layer: 0
   m_Name: GreyBackgroundsMountains
   m_TagString: Untagged
@@ -200,6 +201,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &63795665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63795662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1769c07cc19c6b4aa45266a4f181613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 3
+  hasARightBuddy: 0
+  hasALeftBuddy: 0
+  reverseScale: 1
 --- !u!1 &67736320
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &188032446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -849,8 +866,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1091108926}
   - component: {fileID: 1091108925}
+  - component: {fileID: 1091108927}
   m_Layer: 0
-  m_Name: RedBackgroundsMountains
+  m_Name: ForeGround Dirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -918,6 +936,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1091108927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091108924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1769c07cc19c6b4aa45266a4f181613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 2
+  hasARightBuddy: 0
+  hasALeftBuddy: 0
+  reverseScale: 1
 --- !u!1 &1320879625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,6 +1138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1438353388}
   - component: {fileID: 1438353387}
+  - component: {fileID: 1438353389}
   m_Layer: 0
   m_Name: PurpleBackgroundsMountains
   m_TagString: Untagged
@@ -1174,6 +1209,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1438353389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438353386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1769c07cc19c6b4aa45266a4f181613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 3
+  hasARightBuddy: 0
+  hasALeftBuddy: 0
+  reverseScale: 1
 --- !u!1 &1509794591
 GameObject:
   m_ObjectHideFlags: 3
