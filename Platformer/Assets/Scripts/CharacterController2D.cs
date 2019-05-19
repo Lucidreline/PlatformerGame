@@ -43,7 +43,7 @@ public class CharacterController2D : MonoBehaviour
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
 
-        playerGraphics = transform.FindChild("Graphics");
+        playerGraphics = transform.Find("Graphics");
         if(playerGraphics == null) {
             Debug.LogError("Freak out! Cant find 'Graphics' object of child from player");
         }
