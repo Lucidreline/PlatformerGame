@@ -33,6 +33,9 @@ public class CharacterController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
+    Animator anim;
+    float currentSpeed;
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -44,13 +47,16 @@ public class CharacterController2D : MonoBehaviour
 			OnCrouchEvent = new BoolEvent();
 
         playerGraphics = transform.Find("Graphics");
-        if(playerGraphics == null) {
+        if(playerGraphics == null) 
             Debug.LogError("Freak out! Cant find 'Graphics' object of child from player");
-        }
+
+        anim = GetComponent<Animator>();
 	}
 
 	private void FixedUpdate()
 	{
+        currentSpeed = Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x);
+        UpdateAnimatorParams();
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
 
@@ -149,4 +155,9 @@ public class CharacterController2D : MonoBehaviour
 		theScale.x *= -1;
 		playerGraphics.localScale = theScale;
 	}
+
+    private void UpdateAnimatorParams() {
+        anim.SetBool("Ground", m_Grounded);
+        anim.SetFloat("Speed", currentSpeed);  
+    }
 }
