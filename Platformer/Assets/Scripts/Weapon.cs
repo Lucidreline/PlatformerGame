@@ -10,10 +10,12 @@ public class Weapon : MonoBehaviour {
     [SerializeField] float damage = 10;
     float timeToFire = 0;
 
-    [Header("Bullet Trail")]
+    [Header("Bullet Effect")]
     [SerializeField] Transform BulletTrailPrefab;
-    [SerializeField] float effectSpawnRate = 10;
-    float timeToSpawnEffect = 0;
+    [SerializeField] float bulletTrailSpawnRate = 10;
+    float timeToSpawnTrail = 0;
+
+    [SerializeField] Transform muzzleFlashPreFab;
 
     [Header("Other")]
     [SerializeField] LayerMask whatToHit;
@@ -43,9 +45,9 @@ public class Weapon : MonoBehaviour {
         Vector2 firePointPosition =  new Vector2(firePoint.transform.position.x, firePoint.transform.position.y);
 
         RaycastHit2D hit = Physics2D.Raycast(firePointPosition, mousePosition - firePointPosition, 100, whatToHit);
-        if(Time.time > timeToSpawnEffect) {
+        if(Time.time > timeToSpawnTrail) {
             Effect();
-            timeToSpawnEffect = Time.time + 1 / effectSpawnRate;
+            timeToSpawnTrail = Time.time + 1 / bulletTrailSpawnRate;
         }
         
 
@@ -60,6 +62,11 @@ public class Weapon : MonoBehaviour {
 
     void Effect() {
         Instantiate(BulletTrailPrefab, firePoint.position, firePoint.rotation);
+        Transform clone = (Transform)Instantiate(muzzleFlashPreFab, firePoint.position, firePoint.rotation);
+        clone.parent = firePoint;
+        float size = Random.Range(0.6f, 0.9f);
+        clone.localScale = new Vector3(size, size, size);
+        Destroy(clone.gameObject, 0.02f);
     }
 
 }
