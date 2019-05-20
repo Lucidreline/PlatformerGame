@@ -3,13 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour {
+    Transform firePoint; //the tip of gun
+
+    [Header("Bullet")]
     [SerializeField] float fireRate = 0;
-    [SerializeField] float damage   = 10;
-    [SerializeField] LayerMask whatToHit;
-
+    [SerializeField] float damage = 10;
     float timeToFire = 0;
-    Transform firePoint;
 
+    [Header("Bullet Trail")]
+    [SerializeField] Transform BulletTrailPrefab;
+    [SerializeField] float effectSpawnRate = 10;
+    float timeToSpawnEffect = 0;
+
+    [Header("Other")]
+    [SerializeField] LayerMask whatToHit;
+    
     void Awake() {
         firePoint = transform.Find("FirePoint");
         if (firePoint == null)
@@ -19,9 +27,8 @@ public class Weapon : MonoBehaviour {
     void Update()
     {
         if(fireRate == 0) {
-            if (Input.GetButtonDown("Fire1")) {
+            if (Input.GetButtonDown("Fire1")) 
                 Shoot();
-            }
         }
         else {
             if (Input.GetButton("Fire1") && Time.time > timeToFire) {
@@ -36,6 +43,12 @@ public class Weapon : MonoBehaviour {
         Vector2 firePointPosition =  new Vector2(firePoint.transform.position.x, firePoint.transform.position.y);
 
         RaycastHit2D hit = Physics2D.Raycast(firePointPosition, mousePosition - firePointPosition, 100, whatToHit);
+        if(Time.time > timeToSpawnEffect) {
+            Effect();
+            timeToSpawnEffect = Time.time + 1 / effectSpawnRate;
+        }
+        
+
         Debug.DrawLine(firePointPosition, (mousePosition - firePointPosition) * 100, Color.cyan);
 
         if(hit.collider != null) {
@@ -43,6 +56,10 @@ public class Weapon : MonoBehaviour {
             Debug.Log("We Hit: " + hit.collider.name + ", And did " + damage + " damage!");
         }
 
+    }
+
+    void Effect() {
+        Instantiate(BulletTrailPrefab, firePoint.position, firePoint.rotation);
     }
 
 }

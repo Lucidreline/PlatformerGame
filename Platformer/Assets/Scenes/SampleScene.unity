@@ -453,6 +453,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 0
   damage: 10
+  BulletTrailPrefab: {fileID: 7368516554559502903, guid: 19daa822ed2702144b9d7f81b83ac925,
+    type: 3}
+  effectSpawnRate: 10
   whatToHit:
     serializedVersion: 2
     m_Bits: 567
