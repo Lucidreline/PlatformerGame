@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Parallaxing.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Tiling.cs" />
+    <Compile Include="Assets\Weapon.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/ma52c/Documents/Coding/UnityGames/Plat/Platformer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
