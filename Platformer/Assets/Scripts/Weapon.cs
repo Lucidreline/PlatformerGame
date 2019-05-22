@@ -14,6 +14,9 @@ public class Weapon : MonoBehaviour {
     [SerializeField] Transform BulletTrailPrefab;
     [SerializeField] float bulletTrailSpawnRate = 10;
     [SerializeField] Transform hitPrefab;
+    [SerializeField] float camShakeAmmount = 0.05f;
+    [SerializeField] float camShakeLength = 0.1f;
+    CameraShake camShake;
     float timeToSpawnTrail = 0;
 
     [SerializeField] Transform muzzleFlashPreFab;
@@ -25,6 +28,13 @@ public class Weapon : MonoBehaviour {
         firePoint = transform.Find("FirePoint");
         if (firePoint == null)
             Debug.LogError("WHERES MI FIREPOINT EH?");
+    }
+
+    void Start() {
+        camShake = GameMaster.gm.GetComponent<CameraShake>();
+        if(camShake== null) {
+            Debug.Log("NO camera shake script found on Gm Object");
+        }
     }
 
     void Update()
@@ -96,6 +106,9 @@ public class Weapon : MonoBehaviour {
         float size = Random.Range(0.6f, 0.9f);
         clone.localScale = new Vector3(size, size, size);
         Destroy(clone.gameObject, 0.02f);
+
+        //shake camera
+        camShake.Shake(camShakeAmmount, camShakeLength);
     }
 
 }

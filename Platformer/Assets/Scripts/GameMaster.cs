@@ -9,7 +9,7 @@ public class GameMaster : MonoBehaviour
     [SerializeField] GameObject      respawnPanel;
     [SerializeField] TextMeshProUGUI countdownText;
 
-    void Start() {
+    void Awake() {
         if (gm == null)
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
