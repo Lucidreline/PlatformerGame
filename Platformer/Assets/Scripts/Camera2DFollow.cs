@@ -28,7 +28,10 @@ public class Camera2DFollow : MonoBehaviour {
 	void Update () {
 
 		if (target == null) {
-			FindPlayer ();
+            if(FindPlayer(nextTimeToSearch) != null) {
+                target = FindPlayer(nextTimeToSearch).transform;
+            }
+			
 			return;
 		}
 
@@ -53,14 +56,15 @@ public class Camera2DFollow : MonoBehaviour {
 		lastTargetPosition = target.position;		
 	}
 
-	void FindPlayer() {
-        if(nextTimeToSearch <= Time.time) {
-            //find player
+	public GameObject FindPlayer(float nextTimeToSearch) {
+        if(nextTimeToSearch <= Time.time) { 
             GameObject searchResult = GameObject.FindGameObjectWithTag("Player");
             if(searchResult != null) {
-                target = searchResult.transform;
                 nextTimeToSearch = Time.time + 0.5f; //it will search twice a second
+                
             }
+            return searchResult;
         }
+        return null;
     }
 }
