@@ -7,7 +7,7 @@ public class Weapon : MonoBehaviour {
 
     [Header("Bullet")]
     [SerializeField] float fireRate = 0;
-    [SerializeField] float damage = 10;
+    [SerializeField] int damage = 10;
     float timeToFire = 0;
 
     [Header("Bullet Effect")]
@@ -55,7 +55,13 @@ public class Weapon : MonoBehaviour {
 
         if(hit.collider != null) {
             Debug.DrawLine(firePointPosition, hit.point, Color.red);
-            Debug.Log("We Hit: " + hit.collider.name + ", And did " + damage + " damage!");
+
+            
+            Enemy enemy = hit.collider.GetComponent<Enemy>();
+            if(enemy != null) {
+                enemy.DamageEnemy(damage);
+                Debug.Log("We Hit: " + hit.collider.name + ", And did " + damage + " damage!");
+            }
         }
 
     }

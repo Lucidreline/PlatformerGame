@@ -34,12 +34,17 @@ public class enemyAI : MonoBehaviour
     //waypoint we are currently moving towards
     private int currentWayPoint = 0;
 
+    private bool searchingForPlayer = false;
+
     void Start() {
         seeker = GetComponent<Seeker>();
         rb     = GetComponent<Rigidbody2D>();
 
         if (target == null) {
-            Debug.LogError("THERE IS NOOOO TARGET! PANIC!");
+            if (!searchingForPlayer) {
+                searchingForPlayer = true;
+                StartCoroutine(SearchForPlayer());
+            }
             return;
         }
         //Start a new path and return results in the function onPathComplete
@@ -57,20 +62,43 @@ public class enemyAI : MonoBehaviour
         }
     }
 
+    IEnumerator SearchForPlayer() {
+        GameObject sResult = GameObject.FindGameObjectWithTag("Player");
+        if(sResult == null) {
+            yield return new WaitForSeconds(0.5f);
+            StartCoroutine(SearchForPlayer());
+        }
+        else {
+            searchingForPlayer = false;
+            target = sResult.transform;
+            StartCoroutine(UpdatePath());
+            yield break;
+        }
+        
+    }
+
     IEnumerator UpdatePath() {
         if (target == null) {
-            Debug.Log("NEED TARGET!");
+            if (!searchingForPlayer) {
+                searchingForPlayer = true;
+                StartCoroutine(SearchForPlayer());
+            }
+            yield break;
         }
-            seeker.StartPath(transform.position, target.position, onPathComplete);
+        seeker.StartPath(transform.position, target.position, onPathComplete);
         yield return new WaitForSeconds(1 / updateRate);
         StartCoroutine(UpdatePath());
     }
 
     void FixedUpdate() {
-        if(target == null) {
-                return;
+        if (target == null) {
+            if (!searchingForPlayer) {
+                searchingForPlayer = true;
+                StartCoroutine(SearchForPlayer());
+            }
+            return;
         }
-            
+
         if (path == null) {
             return;
         }

@@ -45,4 +45,8 @@ public class GameMaster : MonoBehaviour
         Destroy(player.gameObject);
         gm.StartCoroutine(gm.RespawnPlayer()); //not exactly sure why i needed a 'gm.'
     }
+
+    public static void KillEnemy(Enemy enemy) {
+        Destroy(enemy.gameObject);
+    }
 }
