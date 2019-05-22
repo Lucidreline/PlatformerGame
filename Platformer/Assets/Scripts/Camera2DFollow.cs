@@ -15,7 +15,7 @@ public class Camera2DFollow : MonoBehaviour {
 	Vector3 currentVelocity;
 	Vector3 lookAheadPos;
 
-	float nextTimeToSearch = 0;
+	float nextTimeToSearch = 0; //searching is heavyon the computer so we want to search every second or so instead of every frame
 	
 	// Use this for initialization
 	void Start () {
@@ -53,12 +53,14 @@ public class Camera2DFollow : MonoBehaviour {
 		lastTargetPosition = target.position;		
 	}
 
-	void FindPlayer () {
-		if (nextTimeToSearch <= Time.time) {
-			GameObject searchResult = GameObject.FindGameObjectWithTag ("Player");
-			if (searchResult != null)
-				target = searchResult.transform;
-			nextTimeToSearch = Time.time + 0.5f;
-		}
-	}
+	void FindPlayer() {
+        if(nextTimeToSearch <= Time.time) {
+            //find player
+            GameObject searchResult = GameObject.FindGameObjectWithTag("Player");
+            if(searchResult != null) {
+                target = searchResult.transform;
+                nextTimeToSearch = Time.time + 0.5f; //it will search twice a second
+            }
+        }
+    }
 }
