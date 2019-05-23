@@ -98,7 +98,7 @@ public class Weapon : MonoBehaviour {
         Destroy(trail.gameObject, 0.04f);
         if(hitNormal != new Vector3(9999, 9999, 9999)) {
             Transform impactClone = Instantiate(hitPrefab, hitPos, Quaternion.FromToRotation(Vector3.right, hitNormal));
-            Destroy(impactClone.gameObject, 2f);
+            Destroy(impactClone.gameObject, 1f);
         }
 
         Transform clone = (Transform)Instantiate(muzzleFlashPreFab, firePoint.position, firePoint.rotation);
