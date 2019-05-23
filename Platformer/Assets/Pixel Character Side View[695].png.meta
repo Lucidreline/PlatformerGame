@@ -1,0 +1,555 @@
+fileFormatVersion: 2
+guid: ca3202e090d68ed4aa910e40af067fd4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 824351848271824052
+    second: Pixel Character Side View[695]_0
+  - first:
+      213: -5994611443861292881
+    second: Pixel Character Side View[695]_1
+  - first:
+      213: 20314092788075778
+    second: PlayerArm
+  - first:
+      213: 1902921140270236071
+    second: Pixel Character Side View[695]_3
+  - first:
+      213: 4760448673109811915
+    second: Pixel Character Side View[695]_4
+  - first:
+      213: 8920058149845670847
+    second: Pixel Character Side View[695]_5
+  - first:
+      213: -2095803934799272072
+    second: Pixel Character Side View[695]_6
+  - first:
+      213: -1136777553413083766
+    second: Pixel Character Side View[695]_7
+  - first:
+      213: 7428567791348945937
+    second: Pixel Character Side View[695]_8
+  - first:
+      213: 4528549367577430666
+    second: Pixel Character Side View[695]_9
+  - first:
+      213: 119144339663824820
+    second: Pixel Character Side View[695]_10
+  - first:
+      213: 4890446250042883516
+    second: Pixel Character Side View[695]_11
+  - first:
+      213: -4645310585014311600
+    second: Pixel Character Side View[695]_12
+  - first:
+      213: -5089425164589540038
+    second: Pixel Character Side View[695]_13
+  - first:
+      213: -7766801709057315446
+    second: Pixel Character Side View[695]_14
+  - first:
+      213: -5148103611386170401
+    second: Pixel Character Side View[695]_15
+  - first:
+      213: -2290282817324460989
+    second: Pixel Character Side View[695]_16
+  - first:
+      213: 5590865564989744039
+    second: Pixel Character Side View[695]_17
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 506
+        width: 80
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5a7c6dd5d2ab54187797ce7cc903b8
+      internalID: 824351848271824052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 505
+        width: 52
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f37f1de8c44b3459e4fbf08c1ced99
+      internalID: -5994611443861292881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerArm
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 575
+        width: 23
+        height: 58
+      alignment: 9
+      pivot: {x: 0.81, y: 0.87}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d0cbd35bf1ded4db663a0e3045e68f
+      internalID: 20314092788075778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_3
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 561
+        width: 30
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd58d35cd912b841b85052e473472a9
+      internalID: 1902921140270236071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_4
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 496
+        width: 65
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2612ee2bc615d8249a7acbb7b37a974e
+      internalID: 4760448673109811915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_5
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 496
+        width: 52
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b7c9d84f2f13e439aaaba3c0c39841
+      internalID: 8920058149845670847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_6
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 566
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bde31601755104d90943c45c33e9f5
+      internalID: -2095803934799272072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_7
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 498
+        width: 57
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf564f877e00e24db0d1bdd42f22dc1
+      internalID: -1136777553413083766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_8
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 496
+        width: 52
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545cb808f55f75d4cac002f6fc0c8e59
+      internalID: 7428567791348945937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_9
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 594
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9654dc3b68b6ec40be635e05ba53a41
+      internalID: 4528549367577430666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_10
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 504
+        width: 57
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a0425e7c704374398c09a0dd1f140b
+      internalID: 119144339663824820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_11
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 567
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebc0ac9e8ba9f74096fca0ac6d7ffc1
+      internalID: 4890446250042883516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_12
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 523
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1e5fc8f5425824a8a97b36e4aeb4a1
+      internalID: -4645310585014311600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_13
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 503
+        width: 29
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d076f312aee4c70469f143521c822579
+      internalID: -5089425164589540038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_14
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 518
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e07816ac91d85b4f9ead6fb47f56503
+      internalID: -7766801709057315446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_15
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 523
+        width: 13
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9599132622c9d374ea72f391c4e16b17
+      internalID: -5148103611386170401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_16
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 512
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca270607442dc94598acc2544479324
+      internalID: -2290282817324460989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Character Side View[695]_17
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 80
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06eb813a927baeb47b1b56b2d354735a
+      internalID: 5590865564989744039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1fd224ff2ce453b4285bca966ed03fb2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
