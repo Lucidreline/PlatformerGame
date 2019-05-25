@@ -528,5 +528,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Stats:
-    maxHealth: 500
+    maxHealth: 250
+    damage: 40
+  deathParticles: {fileID: 8760798973307745488, guid: 0c112a4a1ee4d44448e23ab796eda94f,
+    type: 3}
+  fireEffectRate: 0.2
+  firePrefab: {fileID: 6269189268228794709, guid: 82de60191eb99404e88ce107ffc64e7c,
+    type: 3}
+  shakeAmmount: 0.15
+  shakeLength: 0.5
   statusIndicator: {fileID: 403778614}

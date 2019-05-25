@@ -66,7 +66,6 @@ public class Weapon : MonoBehaviour {
             Enemy enemy = hit.collider.GetComponent<Enemy>();
             if(enemy != null) {
                 enemy.DamageEnemy(damage);
-                Debug.Log("We Hit: " + hit.collider.name + ", And did " + damage + " damage!");
             }
         }
         if (Time.time > timeToSpawnTrail) {
@@ -108,7 +107,7 @@ public class Weapon : MonoBehaviour {
         Destroy(clone.gameObject, 0.02f);
 
         //shake camera
-        camShake.Shake(camShakeAmmount, camShakeLength);
+        //camShake.Shake(camShakeAmmount, camShakeLength);
     }
 
 }

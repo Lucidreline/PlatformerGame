@@ -23,7 +23,7 @@ public class StatusIndicator : MonoBehaviour
         healthBarRect.localScale = new Vector3(_value, healthBarRect.localScale.y, healthBarRect.localScale.x);
         healthText.text = _cur.ToString() + "/" + _max.ToString() + " HP";
         if(_value <= .3) {
-            healthBarRect.GetComponentInParent<Image>().color = new Color(255, 0, 0);
+            healthBarRect.GetComponentInParent<Image>().color = new Color(255, 165, 0);
         }
     }
 }

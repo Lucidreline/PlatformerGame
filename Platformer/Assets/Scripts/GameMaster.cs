@@ -9,9 +9,17 @@ public class GameMaster : MonoBehaviour
     [SerializeField] GameObject      respawnPanel;
     [SerializeField] TextMeshProUGUI countdownText;
 
+    [SerializeField] CameraShake cameraShake;
+
     void Awake() {
         if (gm == null)
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+    }
+
+    void Start() {
+        if(cameraShake == null) {
+            Debug.LogError("Boy you aint got a camera shake on the GameMaster");
+        }
     }
 
     [SerializeField] Transform playerPrefab;
@@ -20,9 +28,7 @@ public class GameMaster : MonoBehaviour
     [SerializeField] Transform spawnPrefab;
     [SerializeField] int       spawnDelay = 3;
     int countdownNum;
-
-    
-
+  
     public IEnumerator RespawnPlayer() {
         StartCoroutine(spawnCountDown());
         yield return new WaitForSeconds(spawnDelay);
@@ -47,6 +53,16 @@ public class GameMaster : MonoBehaviour
     }
 
     public static void KillEnemy(Enemy enemy) {
-        Destroy(enemy.gameObject);
+        gm._killEnemy(enemy);
+
+    }
+
+    public void _killEnemy(Enemy _enemy) {
+        Transform deathParticleClone = Instantiate(_enemy.deathParticles, _enemy.transform.position, Quaternion.identity);
+        
+        cameraShake.Shake(_enemy.shakeAmmount, _enemy.shakeLength);
+        
+        Destroy(_enemy.gameObject);
+        Destroy(deathParticleClone.gameObject, 2);
     }
 }
